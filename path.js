@@ -1,0 +1,10 @@
+
+const path=require('path')
+const { dirname, relative } = require('path/posix')
+console.log(path.sep)
+const filepath=path.join('/content','subfolder','test.text')
+console.log(filepath)
+const basepath=path.basename(filepath)
+console.log(basepath)
+const realtivepath=path.resolve(_dirname,'content','subfolder','test.text')
+console.log(realtivepath)
